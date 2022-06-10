@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(41, 49, 51);
+    height: 100vh;
+}
+.img_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.main_img {
+    animation: changeShadowColor 10000ms linear infinite;
+}
+
+@keyframes changeShadowColor {
+    0% {
+        box-shadow: 0 0 15px blue;
+    }
+    20% {
+        box-shadow: 0 0 15px green;
+    }
+    40% {
+        box-shadow: 0 0 15px yellow;
+    }
+    60% {
+        box-shadow: 0 0 15px red;
+    }
+    80% {
+        box-shadow: 0 0 15px purple;
+    }
+    100% {
+        box-shadow: 0 0 15px blue;
+    }
+}
